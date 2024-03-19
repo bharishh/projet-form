@@ -1,0 +1,53 @@
+@import url(./reset.css);
+
+:root{
+    --bg-color:#202124;
+    --bg-color-form:#303134;
+    --bg-color-text:#fff;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    color: var(--bg-color-text);
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+}   
+
+fieldset, aside{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1rem ;
+}
+
+aside{
+    max-width: 35rem;
+    padding: 5rem ;
+}
+
+figure img{
+    width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+
+header h1, footer p{
+    text-align: center;
+}
+
+.search-input, button{
+    padding: .4rem;
+
+}
+
+.search-input input{
+    line-height: 2rem;
+    padding: 0 .5rem;
+    background-color: var(--bg-color-form);
+    color: var(--bg-color-text);
+}
